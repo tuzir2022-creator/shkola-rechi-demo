@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Школа актёрского мастерства и речи - демо главной</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><span class="ask">&lt;&lt;название школы&gt;&gt;</span></a>
+    <nav aria-label="Основное меню">
+      <a href="#napravleniya">Направления</a>
+      <a href="#pedagogi">Педагоги</a>
+      <a href="#zapis">Запись</a>
+      <a href="#kontakty">Контакты</a>
+    </nav>
+    <a class="pill" href="#zapis">Записаться</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Школа актёрского мастерства и речи</p>
+      <h1 id="loud" aria-label="Говорить не страшно"><span class="w1">Говорить</span> <span class="w2">не страшно</span></h1>
+      <div class="vol">
+        <label for="vol">Громкость</label>
+        <span class="lo" aria-hidden="true">тихо</span>
+        <input id="vol" type="range" min="0" max="100" value="100" aria-describedby="volhint">
+        <span class="hi" aria-hidden="true">громко</span>
+      </div>
+      <p id="volhint" class="hint">Подвигайте ползунок: так звучит голос, когда проходит зажим.</p>
+      <div class="actions">
+        <a class="cta" href="#zapis">Записаться на пробное занятие</a>
+        <a class="ghost" href="#napravleniya">Посмотреть направления</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="napravleniya">
+    <div class="wrap">
+      <h2>Чему учим</h2>
+      <div class="dirs">
+        <article class="dir big">
+          <h3>Актёрское мастерство</h3>
+          <p class="ask">&lt;&lt;запросить у заказчика: программа, формат, возраст, длительность&gt;&gt;</p>
+        </article>
+        <article class="dir">
+          <h3>Речь и голос</h3>
+          <p class="ask">&lt;&lt;запросить у заказчика: программа и формат&gt;&gt;</p>
+        </article>
+        <article class="dir">
+          <h3>Публичные выступления</h3>
+          <p class="ask">&lt;&lt;запросить у заказчика: есть ли такое направление&gt;&gt;</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedagogi">
+    <div class="wrap">
+      <h2>Педагоги</h2>
+      <div class="team">
+        <div class="person"><div class="ava" aria-hidden="true"></div><h3 class="ask">&lt;&lt;имя педагога&gt;&gt;</h3><p class="ask">&lt;&lt;опыт, регалии, фото&gt;&gt;</p></div>
+        <div class="person"><div class="ava" aria-hidden="true"></div><h3 class="ask">&lt;&lt;имя педагога&gt;&gt;</h3><p class="ask">&lt;&lt;опыт, регалии, фото&gt;&gt;</p></div>
+        <div class="person"><div class="ava" aria-hidden="true"></div><h3 class="ask">&lt;&lt;имя педагога&gt;&gt;</h3><p class="ask">&lt;&lt;опыт, регалии, фото&gt;&gt;</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zapis" class="sign">
+    <div class="wrap">
+      <h2>Запись на пробное занятие</h2>
+      <form id="form" novalidate>
+        <label>Имя<input name="name" autocomplete="given-name" required></label>
+        <label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <button type="submit">Отправить заявку</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="note">Это демо: заявка никуда не уходит. На рабочем сайте форма отправляет данные вам в Telegram или на почту.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="kontakty">
+  <div class="wrap foot">
+    <div>
+      <p>Телефон: 8 (888) 888-88-88</p>
+      <p>Адрес: <span class="ask">&lt;&lt;запросить у заказчика&gt;&gt;</span></p>
+      <p>Telegram, MAX, ВК: <span class="ask">&lt;&lt;запросить у заказчика&gt;&gt;</span></p>
+    </div>
+    <p class="demo">Демонстрационный макет, не является официальным сайтом организации.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
